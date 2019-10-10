@@ -1,20 +1,33 @@
 import Foundation
 
-open struct DDTools {
+public class DDTools: NSObject {
+    
     var text = "Hello, World!"
+    
+    public var texts = "Hello, World!"
+
     func add(a: Int, b: Int) -> Int {
         return a + b
     }
+    
+    public func adds(a: Int, b: Int) -> Int {
+        return a + b
+    }
+
 }
 
 
-open class Person: NSObject {
+public class Person: NSObject {
     
+    var text = "Hello, World!"
+    
+    public var texts = "Hello, World!"
+
     func add(a: Int, b: Int) -> Int {
         return a + b
     }
     
-    open func adds(a: Int, b: Int) -> Int {
+    public func adds(a: Int, b: Int) -> Int {
         return a + b
     }
 
