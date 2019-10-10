@@ -1,44 +1,22 @@
+//
+//  File.swift
+//  
+//
+//  Created by DCH on 2019/10/10.
+//
+
 import Foundation
+import UIKit
 
-public struct DDTools {
-    
-    public var text = "Hello, World!"
-    
-    public func add(a: Int, b: Int) -> Int {
-        return a + b
-    }
-    
-}
-
-
-public class Person: NSObject {
-    
-    var text = "Hello, World!"
-    
-    public var texts = "Hello, World!"
-
-    func add(a: Int, b: Int) -> Int {
-        return a + b
-    }
-    
-    public func adds(a: Int, b: Int) -> Int {
-        return a + b
-    }
-
-}
-
-
-public class DDColor: NSObject {
-    open var red: UIColor = UIColor.red
-    open var green: UIColor = UIColor.green
+public struct DDColor {
+    public static let red: UIColor = UIColor.red
+    public static let green: UIColor = UIColor.green
 }
 
 public extension UIColor {
     
     // rgb颜色工具 hexString
     public static func dd_color(_ hexString: String) -> UIColor {
-        
-        
         var hex = hexString.uppercased()
         if hex.hasPrefix("#") { hex = hex.replacingOccurrences(of: "#", with: "0X") }
         var rString: String = "FF"
