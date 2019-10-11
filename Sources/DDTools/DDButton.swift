@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIButton {
     // 上图下字button
-    public func upImageDownLabel(_ space: CGFloat = 0)
+    func upImageDownLabel(_ space: CGFloat = 0)
     {
         if imageView == nil || titleLabel == nil { return }
         let imageSize = imageView!.dd_size
@@ -21,7 +21,7 @@ public extension UIButton {
     }
     
     // 左图右字
-    public func leftImageRightLabel(_ space: CGFloat = 0)
+    func leftImageRightLabel(_ space: CGFloat = 0)
     {
         if imageView == nil || titleLabel == nil { return }
         let imageSize = imageView!.dd_size
@@ -32,7 +32,7 @@ public extension UIButton {
     }
     
     // badge
-    public func badge(_ value: Int?) {
+    func badge(_ value: Int?) {
         if imageView == nil || titleLabel == nil { return }
         let badgeW: CGFloat = 20
         let imageSize = imageView!.dd_size

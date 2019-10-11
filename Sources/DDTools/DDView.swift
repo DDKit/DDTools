@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 public extension UIView {
-    public var dd_x: CGFloat {
+    var dd_x: CGFloat {
         set {
             var f = frame
             f.origin.x = newValue
@@ -21,7 +21,7 @@ public extension UIView {
     }
     
     
-    public var dd_y: CGFloat {
+    var dd_y: CGFloat {
         set {
             var f = frame
             f.origin.y = newValue
@@ -32,7 +32,7 @@ public extension UIView {
         }
     }
     
-    public var dd_w: CGFloat {
+    var dd_w: CGFloat {
         set {
             var f = frame
             f.size.width = newValue
@@ -43,7 +43,7 @@ public extension UIView {
         }
     }
     
-    public var dd_h: CGFloat {
+    var dd_h: CGFloat {
         set {
             var f = frame
             f.size.height = newValue
@@ -54,7 +54,7 @@ public extension UIView {
         }
     }
     
-    public var dd_size: CGSize {
+    var dd_size: CGSize {
         set {
             var f = frame
             f.size = newValue
@@ -65,7 +65,7 @@ public extension UIView {
         }
     }
     
-    public var dd_origin: CGPoint {
+    var dd_origin: CGPoint {
         set {
             var f = frame
             f.origin = newValue
@@ -76,7 +76,7 @@ public extension UIView {
         }
     }
     
-    public var dd_corner: CGFloat {
+    var dd_corner: CGFloat {
         set {
             layer.masksToBounds = true
             layer.cornerRadius = newValue
@@ -86,7 +86,7 @@ public extension UIView {
         }
     }
     
-    public func dd_shadow()
+    func dd_shadow()
     {
         self.clipsToBounds = false
         self.layer.shadowColor = UIColor.gray.cgColor
@@ -95,7 +95,7 @@ public extension UIView {
         self.layer.shadowRadius = 6
     }
 
-    public var dd_borderColor: UIColor {
+    var dd_borderColor: UIColor {
         set {
             layer.borderColor = newValue.cgColor
         }
